@@ -1,4 +1,11 @@
-{%for post in posts%}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<div class=container>
+    {%for post in posts%}
    <h2><a href="{%url 'post_detail' post.id%}">{{post.title}}</a></h2>
    <p>{{post.content|truncatewords:20}}</p>
 {%endfor %}
+
+</div>

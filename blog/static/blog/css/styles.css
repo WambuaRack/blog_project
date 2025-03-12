@@ -1,0 +1,14 @@
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+h2 a {
+    text-decoration: none;
+    color: #007bff;
+}
+h2 a:hover {
+    text-decoration: underline;
+}
